@@ -98,7 +98,7 @@ class OikotieScraper:
 
     def write_adverts(self, path):
         with open(path, "w", encoding="utf-8") as f:
-            json.dump(self.adverts, f, ensure_ascii=False, indent=4)
+            json.dumps(self.adverts, f, ensure_ascii=False, indent=4)
 
 
 if __name__ == "__main__":
